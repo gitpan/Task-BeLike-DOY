@@ -1,0 +1,12 @@
+Changes
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/Task/BeLike/DOY.pm
+t/000-load.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
+t/task-bogus.t
