@@ -9,60 +9,65 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-                       'test' => {
-                                   'TESTS' => 't/*.t'
-                                 },
-                       'NAME' => 'Task::BeLike::DOY',
-                       'DISTNAME' => 'Task-BeLike-DOY',
-                       'CONFIGURE_REQUIRES' => {
-                                                 'ExtUtils::MakeMaker' => '6.31'
-                                               },
-                       'AUTHOR' => 'Jesse Luehrs <doy at tozt dot net>',
-                       'BUILD_REQUIRES' => {},
-                       'ABSTRACT' => 'modules I use',
-                       'EXE_FILES' => [],
-                       'VERSION' => '0.01',
-                       'PREREQ_PM' => {
-                                        'App::Termcast' => '0.06',
-                                        'Devel::NYTProf' => '3.00',
-                                        'YAML' => '0',
-                                        'App::Nopaste' => '0.20',
-                                        'Archive::Zip' => '0',
-                                        'Pod::Coverage::TrustPod' => '0',
-                                        'Module::Setup' => '0',
-                                        'App::Ack' => '0',
-                                        'B::Keywords' => '0',
-                                        'Scalar::Defer' => '0',
-                                        'Test::Pod' => '0',
-                                        'CPAN::Mini::Webserver' => '0',
-                                        'KiokuDB::Navigator' => '0',
-                                        'Moose' => '1.00',
-                                        'Test::Pod::Coverage' => '0',
-                                        'Module::Refresh' => '0',
-                                        'IO::Pty::Easy' => '0.08',
-                                        'WWW::Mechanize' => '0',
-                                        'App::cpanminus' => '1.00',
-                                        'Carp::Always::Color' => '0.03',
-                                        'CPAN::Mini' => '0',
-                                        'Net::GitHub' => '0.06',
-                                        'Term::ReadLine::Gnu' => '0',
-                                        'Dist::Zilla' => '2.00',
-                                        'Path::Class' => '0',
-                                        'Devel::REPL' => '0',
-                                        'Devel::Cover' => '0',
-                                        'LWP' => '0',
-                                        'Carp::REPL' => '0'
-                                      },
-                       'LICENSE' => 'perl'
-                     );
+  'ABSTRACT' => 'modules I use',
+  'AUTHOR' => 'Jesse Luehrs <doy at tozt dot net>',
+  'BUILD_REQUIRES' => {},
+  'CONFIGURE_REQUIRES' => {
+    'ExtUtils::MakeMaker' => '6.31'
+  },
+  'DISTNAME' => 'Task-BeLike-DOY',
+  'EXE_FILES' => [],
+  'LICENSE' => 'perl',
+  'NAME' => 'Task::BeLike::DOY',
+  'PREREQ_PM' => {
+    'App::Ack' => '0',
+    'App::Nopaste' => '0.20',
+    'App::Termcast' => '0.06',
+    'App::cpanminus' => '1.00',
+    'App::cpanoutdated' => '0.05',
+    'Archive::Zip' => '0',
+    'B::Keywords' => '0',
+    'CPAN::Mini' => '0',
+    'CPAN::Mini::Webserver' => '0',
+    'Carp::Always::Color' => '0.03',
+    'Carp::REPL' => '0',
+    'Devel::Cover' => '0',
+    'Devel::NYTProf' => '3.00',
+    'Devel::REPL' => '0',
+    'Devel::Trace' => '0',
+    'Dist::Zilla' => '4.00',
+    'Dist::Zilla::PluginBundle::DOY' => '0',
+    'IO::Pty::Easy' => '0.08',
+    'KiokuDB::Navigator' => '0',
+    'LWP' => '0',
+    'Module::Refresh' => '0',
+    'Module::Setup' => '0',
+    'Moose' => '1.00',
+    'Net::GitHub' => '0.06',
+    'Path::Class' => '0',
+    'Pod::Coverage::TrustPod' => '0',
+    'Pod::Weaver::Section::Template' => '0',
+    'Scalar::Defer' => '0',
+    'Task::SDK::Moose' => '0',
+    'Term::ReadLine::Gnu' => '0',
+    'Test::Pod' => '0',
+    'Test::Pod::Coverage' => '0',
+    'WWW::Mechanize' => '0',
+    'YAML' => '0'
+  },
+  'VERSION' => '0.02',
+  'test' => {
+    'TESTS' => 't/*.t'
+  }
+);
 
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
-  my $pp = $WriteMakefileArgs{PREREQ_PM}; 
+  my $pp = $WriteMakefileArgs{PREREQ_PM};
   for my $mod ( keys %$br ) {
     if ( exists $pp->{$mod} ) {
-      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod}; 
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod};
     }
     else {
       $pp->{$mod} = $br->{$mod};
