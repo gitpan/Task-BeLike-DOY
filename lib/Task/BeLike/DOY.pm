@@ -1,6 +1,6 @@
 package Task::BeLike::DOY;
 BEGIN {
-  $Task::BeLike::DOY::VERSION = '0.02';
+  $Task::BeLike::DOY::VERSION = '0.03';
 }
 #ABSTRACT: modules I use
 
@@ -16,7 +16,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 TASK CONTENTS
 
@@ -38,6 +38,8 @@ Version 0.20 required because: has Codepeek pastebin
 
 =head3 L<Carp::REPL>
 
+=head3 L<circular::require>
+
 =head3 L<Devel::Cover>
 
 =head3 L<Devel::NYTProf> 3.00
@@ -48,7 +50,9 @@ Version 0.20 required because: has Codepeek pastebin
 
 =head3 L<Dist::Zilla> 4.00
 
-=head3 L<Dist::Zilla::PluginBundle::DOY>
+=head3 L<Dist::Zilla::PluginBundle::DOY> 0.05
+
+=head3 L<ExtUtils::MakeMaker::Dist::Zilla::Develop>
 
 =head3 L<Module::Setup>
 
@@ -106,6 +110,8 @@ Version 0.05 required because: for offline mode
 
 Version 0.06 required because: includes ::V2
 
+=head3 L<File::pushd>
+
 =begin taskweaver_parsing_is_broken
 
 
@@ -113,49 +119,13 @@ Version 0.06 required because: includes ::V2
 
 =end taskweaver_parsing_is_broken
 
-=head1 BUGS
-
-No known bugs.
-
-Please report any bugs through RT: email
-C<bug-task-belike-doy at rt.cpan.org>, or browse to
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-BeLike-DOY>.
-
-=head1 SUPPORT
-
-You can find this documentation for this module with the perldoc command.
-
-    perldoc Task::BeLike::DOY
-
-You can also look for information at:
-
-=over 4
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Task-BeLike-DOY>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Task-BeLike-DOY>
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-BeLike-DOY>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Task-BeLike-DOY>
-
-=back
-
 =head1 AUTHOR
 
-  Jesse Luehrs <doy at tozt dot net>
+Jesse Luehrs <doy at tozt dot net>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Jesse Luehrs.
+This software is copyright (c) 2011 by Jesse Luehrs.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

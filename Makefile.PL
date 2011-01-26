@@ -36,7 +36,9 @@ my %WriteMakefileArgs = (
     'Devel::REPL' => '0',
     'Devel::Trace' => '0',
     'Dist::Zilla' => '4.00',
-    'Dist::Zilla::PluginBundle::DOY' => '0',
+    'Dist::Zilla::PluginBundle::DOY' => '0.05',
+    'ExtUtils::MakeMaker::Dist::Zilla::Develop' => '0',
+    'File::pushd' => '0',
     'IO::Pty::Easy' => '0.08',
     'KiokuDB::Navigator' => '0',
     'LWP' => '0',
@@ -53,9 +55,10 @@ my %WriteMakefileArgs = (
     'Test::Pod' => '0',
     'Test::Pod::Coverage' => '0',
     'WWW::Mechanize' => '0',
-    'YAML' => '0'
+    'YAML' => '0',
+    'circular::require' => '0'
   },
-  'VERSION' => '0.02',
+  'VERSION' => '0.03',
   'test' => {
     'TESTS' => 't/*.t'
   }
