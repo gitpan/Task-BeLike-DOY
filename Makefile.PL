@@ -4,16 +4,18 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'modules I use',
   'AUTHOR' => 'Jesse Luehrs <doy at tozt dot net>',
-  'BUILD_REQUIRES' => {},
+  'BUILD_REQUIRES' => {
+    'Test::More' => '0.88'
+  },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'Task-BeLike-DOY',
   'EXE_FILES' => [],
@@ -23,16 +25,20 @@ my %WriteMakefileArgs = (
     'App::Ack' => '0',
     'App::Nopaste' => '0.20',
     'App::Termcast' => '0.06',
-    'App::cpanminus' => '1.00',
+    'App::cpanminus' => '1.4000',
     'App::cpanoutdated' => '0.05',
+    'App::pmuninstall' => '0',
     'Archive::Zip' => '0',
     'B::Keywords' => '0',
     'CPAN::Mini' => '0',
     'CPAN::Mini::Webserver' => '0',
     'Carp::Always::Color' => '0.03',
     'Carp::REPL' => '0',
+    'Class::Refresh' => '0',
+    'DateTime' => '0',
     'Devel::Cover' => '0',
     'Devel::NYTProf' => '3.00',
+    'Devel::PartialDump' => '0',
     'Devel::REPL' => '0',
     'Devel::Trace' => '0',
     'Dist::Zilla' => '4.00',
@@ -40,15 +46,16 @@ my %WriteMakefileArgs = (
     'ExtUtils::MakeMaker::Dist::Zilla::Develop' => '0',
     'File::pushd' => '0',
     'IO::Pty::Easy' => '0.08',
-    'KiokuDB::Navigator' => '0',
+    'KiokuDB' => '0',
+    'KiokuDB::Backend::DBI' => '0',
     'LWP' => '0',
-    'Module::Refresh' => '0',
-    'Module::Setup' => '0',
-    'Moose' => '1.00',
+    'Moose' => '2.0000',
+    'MooseX::Types::Path::Class' => '0',
+    'MooseX::Types::URI' => '0',
     'Net::GitHub' => '0.06',
-    'Path::Class' => '0',
+    'Plack' => '0',
     'Pod::Coverage::TrustPod' => '0',
-    'Pod::Weaver::Section::Template' => '0',
+    'Proc::InvokeEditor' => '0',
     'Scalar::Defer' => '0',
     'Task::SDK::Moose' => '0',
     'Term::ReadLine::Gnu' => '0',
@@ -56,9 +63,10 @@ my %WriteMakefileArgs = (
     'Test::Pod::Coverage' => '0',
     'WWW::Mechanize' => '0',
     'YAML' => '0',
+    'autodie' => '0',
     'circular::require' => '0'
   },
-  'VERSION' => '0.03',
+  'VERSION' => '0.04',
   'test' => {
     'TESTS' => 't/*.t'
   }

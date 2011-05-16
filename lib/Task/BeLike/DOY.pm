@@ -1,6 +1,6 @@
 package Task::BeLike::DOY;
 BEGIN {
-  $Task::BeLike::DOY::VERSION = '0.03';
+  $Task::BeLike::DOY::VERSION = '0.04';
 }
 #ABSTRACT: modules I use
 
@@ -16,7 +16,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 TASK CONTENTS
 
@@ -29,8 +29,6 @@ version 0.03
 Version 0.20 required because: has Codepeek pastebin
 
 =head3 L<App::Termcast> 0.06
-
-=head3 L<KiokuDB::Navigator>
 
 =head2 Development tools
 
@@ -54,23 +52,27 @@ Version 0.20 required because: has Codepeek pastebin
 
 =head3 L<ExtUtils::MakeMaker::Dist::Zilla::Develop>
 
-=head3 L<Module::Setup>
-
-=head3 L<Pod::Weaver::Section::Template>
-
 =head3 L<Task::SDK::Moose>
 
 =head2 Useful optional deps for things
+
+=head3 L<autodie>
 
 =head3 L<Archive::Zip>
 
 =head3 L<B::Keywords>
 
+=head3 L<Class::Refresh>
+
+=head3 L<Devel::PartialDump>
+
+=head3 L<KiokuDB::Backend::DBI>
+
 =head3 L<LWP>
 
-=head3 L<Module::Refresh>
-
 =head3 L<Pod::Coverage::TrustPod>
+
+=head3 L<Proc::InvokeEditor>
 
 =head3 L<Scalar::Defer>
 
@@ -84,11 +86,13 @@ Version 0.20 required because: has Codepeek pastebin
 
 =head2 CPAN interaction
 
-=head3 L<App::cpanminus> 1.00
+=head3 L<App::cpanminus> 1.4000
 
 =head3 L<App::cpanoutdated> 0.05
 
 Version 0.05 required because: for offline mode
+
+=head3 L<App::pmuninstall>
 
 =head3 L<CPAN::Mini>
 
@@ -96,11 +100,17 @@ Version 0.05 required because: for offline mode
 
 =head2 Modules I use a lot
 
-=head3 L<Moose> 1.00
+=head3 L<DateTime>
 
-=head3 L<Path::Class>
+=head3 L<KiokuDB>
 
-=head3 L<WWW::Mechanize>
+=head3 L<Moose> 2.0000
+
+=head3 L<MooseX::Types::Path::Class>
+
+=head3 L<MooseX::Types::URI>
+
+=head3 L<Plack>
 
 =head2 Dependencies for my non-CPAN apps
 
@@ -111,6 +121,8 @@ Version 0.05 required because: for offline mode
 Version 0.06 required because: includes ::V2
 
 =head3 L<File::pushd>
+
+=head3 L<WWW::Mechanize>
 
 =begin taskweaver_parsing_is_broken
 
