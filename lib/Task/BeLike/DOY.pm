@@ -1,6 +1,9 @@
 package Task::BeLike::DOY;
 BEGIN {
-  $Task::BeLike::DOY::VERSION = '0.04';
+  $Task::BeLike::DOY::AUTHORITY = 'cpan:DOY';
+}
+{
+  $Task::BeLike::DOY::VERSION = '0.05';
 }
 #ABSTRACT: modules I use
 
@@ -16,7 +19,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 TASK CONTENTS
 
@@ -51,8 +54,6 @@ Version 0.20 required because: has Codepeek pastebin
 =head3 L<Dist::Zilla::PluginBundle::DOY> 0.05
 
 =head3 L<ExtUtils::MakeMaker::Dist::Zilla::Develop>
-
-=head3 L<Task::SDK::Moose>
 
 =head2 Useful optional deps for things
 
@@ -98,6 +99,8 @@ Version 0.05 required because: for offline mode
 
 =head3 L<CPAN::Mini::Webserver>
 
+=head3 L<Pod::Cpandoc>
+
 =head2 Modules I use a lot
 
 =head3 L<DateTime>
@@ -137,7 +140,7 @@ Jesse Luehrs <doy at tozt dot net>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Jesse Luehrs.
+This software is copyright (c) 2012 by Jesse Luehrs.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
