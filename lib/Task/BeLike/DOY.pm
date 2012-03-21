@@ -3,7 +3,7 @@ BEGIN {
   $Task::BeLike::DOY::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Task::BeLike::DOY::VERSION = '0.05';
+  $Task::BeLike::DOY::VERSION = '0.06';
 }
 #ABSTRACT: modules I use
 
@@ -19,7 +19,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 TASK CONTENTS
 
@@ -32,6 +32,14 @@ version 0.05
 Version 0.20 required because: has Codepeek pastebin
 
 =head3 L<App::Termcast> 0.06
+
+=head3 L<App::Ttyrec>
+
+=head3 L<LastFM::Export>
+
+=head3 L<Term::TtyRec::Plus> 0.09
+
+Version 0.09 required because: for ttyplay and ttytime
 
 =head2 Development tools
 
@@ -51,7 +59,7 @@ Version 0.20 required because: has Codepeek pastebin
 
 =head3 L<Dist::Zilla> 4.00
 
-=head3 L<Dist::Zilla::PluginBundle::DOY> 0.05
+=head3 L<Dist::Zilla::PluginBundle::DOY> 0.07
 
 =head3 L<ExtUtils::MakeMaker::Dist::Zilla::Develop>
 
@@ -66,6 +74,8 @@ Version 0.20 required because: has Codepeek pastebin
 =head3 L<Class::Refresh>
 
 =head3 L<Devel::PartialDump>
+
+=head3 L<JSON>
 
 =head3 L<KiokuDB::Backend::DBI>
 
@@ -87,7 +97,9 @@ Version 0.20 required because: has Codepeek pastebin
 
 =head2 CPAN interaction
 
-=head3 L<App::cpanminus> 1.4000
+=head3 L<App::cpanminus> 1.5007
+
+Version 1.5007 required because: for build.log prompting
 
 =head3 L<App::cpanoutdated> 0.05
 
@@ -103,17 +115,33 @@ Version 0.05 required because: for offline mode
 
 =head2 Modules I use a lot
 
+=head3 L<Bread::Board::Declare>
+
+=head3 L<Data::Stream::Bulk>
+
+=head3 L<Data::Visitor>
+
 =head3 L<DateTime>
 
 =head3 L<KiokuDB>
 
-=head3 L<Moose> 2.0000
+=head3 L<Moose> 2.0400
 
 =head3 L<MooseX::Types::Path::Class>
 
 =head3 L<MooseX::Types::URI>
 
+=head3 L<namespace::autoclean>
+
+=head3 L<Path::Class> 0.25
+
+Version 0.25 required because: for ->traverse
+
 =head3 L<Plack>
+
+=head3 L<Term::ProgressBar>
+
+=head3 L<Test::Requires>
 
 =head2 Dependencies for my non-CPAN apps
 
