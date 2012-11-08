@@ -3,7 +3,7 @@ BEGIN {
   $Task::BeLike::DOY::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Task::BeLike::DOY::VERSION = '0.06';
+  $Task::BeLike::DOY::VERSION = '0.07';
 }
 #ABSTRACT: modules I use
 
@@ -19,7 +19,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 TASK CONTENTS
 
@@ -30,6 +30,8 @@ version 0.06
 =head3 L<App::Nopaste> 0.20
 
 Version 0.20 required because: has Codepeek pastebin
+
+=head3 L<App::ph>
 
 =head3 L<App::Termcast> 0.06
 
@@ -43,6 +45,8 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head2 Development tools
 
+=head3 L<App::ForkProve> 0.2.0
+
 =head3 L<Carp::Always::Color> 0.03
 
 =head3 L<Carp::REPL>
@@ -51,17 +55,23 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head3 L<Devel::Cover>
 
+=head3 L<Devel::FindRef>
+
 =head3 L<Devel::NYTProf> 3.00
 
 =head3 L<Devel::REPL>
+
+=head3 L<Devel::STDERR::Indent>
 
 =head3 L<Devel::Trace>
 
 =head3 L<Dist::Zilla> 4.00
 
-=head3 L<Dist::Zilla::PluginBundle::DOY> 0.07
+=head3 L<Dist::Zilla::PluginBundle::DOY> 0.09
 
 =head3 L<ExtUtils::MakeMaker::Dist::Zilla::Develop>
+
+=head3 L<Test::Pretty>
 
 =head2 Useful optional deps for things
 
@@ -75,11 +85,13 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head3 L<Devel::PartialDump>
 
+=head3 L<HTTP::Parser::XS>
+
 =head3 L<JSON>
 
-=head3 L<KiokuDB::Backend::DBI>
-
 =head3 L<LWP>
+
+=head3 L<LWP::Protocol::https>
 
 =head3 L<Pod::Coverage::TrustPod>
 
@@ -109,27 +121,15 @@ Version 0.05 required because: for offline mode
 
 =head3 L<CPAN::Mini>
 
-=head3 L<CPAN::Mini::Webserver>
-
 =head3 L<Pod::Cpandoc>
 
 =head2 Modules I use a lot
 
 =head3 L<Bread::Board::Declare>
 
-=head3 L<Data::Stream::Bulk>
-
-=head3 L<Data::Visitor>
-
 =head3 L<DateTime>
 
-=head3 L<KiokuDB>
-
 =head3 L<Moose> 2.0400
-
-=head3 L<MooseX::Types::Path::Class>
-
-=head3 L<MooseX::Types::URI>
 
 =head3 L<namespace::autoclean>
 
@@ -141,17 +141,23 @@ Version 0.25 required because: for ->traverse
 
 =head3 L<Term::ProgressBar>
 
+=head3 L<Test::Fatal>
+
+=head3 L<Test::More> 0.88
+
 =head3 L<Test::Requires>
 
 =head2 Dependencies for my non-CPAN apps
 
+=head3 L<File::pushd>
+
 =head3 L<IO::Pty::Easy> 0.08
+
+=head3 L<JSON>
 
 =head3 L<Net::GitHub> 0.06
 
 Version 0.06 required because: includes ::V2
-
-=head3 L<File::pushd>
 
 =head3 L<WWW::Mechanize>
 
