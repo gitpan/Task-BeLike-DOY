@@ -57,13 +57,11 @@ my %WriteMakefileArgs = (
     "LWP::Protocol::https" => 0,
     "LastFM::Export" => 0,
     "Moose" => "2.0400",
-    "Net::GitHub" => "0.06",
     "Path::Class" => "0.25",
     "Plack" => 0,
     "Pod::Coverage::TrustPod" => 0,
     "Pod::Cpandoc" => 0,
     "Proc::InvokeEditor" => 0,
-    "Scalar::Defer" => 0,
     "Term::ProgressBar" => 0,
     "Term::ReadLine::Gnu" => 0,
     "Term::TtyRec::Plus" => "0.09",
@@ -79,7 +77,7 @@ my %WriteMakefileArgs = (
     "circular::require" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.07",
+  "VERSION" => "0.08",
   "test" => {
     "TESTS" => "t/*.t"
   }

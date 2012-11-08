@@ -3,7 +3,7 @@ BEGIN {
   $Task::BeLike::DOY::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Task::BeLike::DOY::VERSION = '0.07';
+  $Task::BeLike::DOY::VERSION = '0.08';
 }
 #ABSTRACT: modules I use
 
@@ -19,7 +19,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 TASK CONTENTS
 
@@ -97,8 +97,6 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head3 L<Proc::InvokeEditor>
 
-=head3 L<Scalar::Defer>
-
 =head3 L<Term::ReadLine::Gnu>
 
 =head3 L<Test::Pod>
@@ -154,10 +152,6 @@ Version 0.25 required because: for ->traverse
 =head3 L<IO::Pty::Easy> 0.08
 
 =head3 L<JSON>
-
-=head3 L<Net::GitHub> 0.06
-
-Version 0.06 required because: includes ::V2
 
 =head3 L<WWW::Mechanize>
 
