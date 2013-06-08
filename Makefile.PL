@@ -11,9 +11,7 @@ use ExtUtils::MakeMaker 6.30;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "modules I use",
   "AUTHOR" => "Jesse Luehrs <doy at tozt dot net>",
-  "BUILD_REQUIRES" => {
-    "Test::More" => "0.88"
-  },
+  "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
@@ -22,8 +20,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Task::BeLike::DOY",
   "PREREQ_PM" => {
-    "App::Ack" => 0,
-    "App::ForkProve" => "v0.2.0",
+    "App::ForkProve" => 0,
     "App::Nopaste" => "0.20",
     "App::Termcast" => "0.06",
     "App::Ttyrec" => 0,
@@ -32,18 +29,15 @@ my %WriteMakefileArgs = (
     "App::ph" => 0,
     "App::pmuninstall" => 0,
     "Archive::Zip" => 0,
-    "B::Keywords" => 0,
     "Bread::Board::Declare" => 0,
     "CPAN::Mini" => 0,
     "Carp::Always::Color" => "0.03",
     "Carp::REPL" => 0,
-    "Class::Refresh" => 0,
     "DateTime" => 0,
     "Devel::Cover" => 0,
     "Devel::FindRef" => 0,
     "Devel::NYTProf" => "3.00",
     "Devel::PartialDump" => 0,
-    "Devel::REPL" => 0,
     "Devel::STDERR::Indent" => 0,
     "Devel::Trace" => 0,
     "Dist::Zilla" => "4.00",
@@ -62,6 +56,7 @@ my %WriteMakefileArgs = (
     "Pod::Coverage::TrustPod" => 0,
     "Pod::Cpandoc" => 0,
     "Proc::InvokeEditor" => 0,
+    "Reply" => 0,
     "Term::ProgressBar" => 0,
     "Term::ReadLine::Gnu" => 0,
     "Term::TtyRec::Plus" => "0.09",
@@ -71,18 +66,35 @@ my %WriteMakefileArgs = (
     "Test::Pod::Coverage" => 0,
     "Test::Pretty" => 0,
     "Test::Requires" => 0,
+    "Unicode::Tussle" => 0,
     "WWW::Mechanize" => 0,
     "YAML" => 0,
     "autodie" => 0,
     "circular::require" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.08",
+  "TEST_REQUIRES" => {
+    "Test::More" => "0.88"
+  },
+  "VERSION" => "0.09",
   "test" => {
     "TESTS" => "t/*.t"
   }
 );
 
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
+  my $tr = delete $WriteMakefileArgs{TEST_REQUIRES};
+  my $br = $WriteMakefileArgs{BUILD_REQUIRES};
+  for my $mod ( keys %$tr ) {
+    if ( exists $br->{$mod} ) {
+      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
+    }
+    else {
+      $br->{$mod} = $tr->{$mod};
+    }
+  }
+}
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};

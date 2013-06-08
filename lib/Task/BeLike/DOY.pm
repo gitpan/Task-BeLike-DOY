@@ -3,7 +3,7 @@ BEGIN {
   $Task::BeLike::DOY::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Task::BeLike::DOY::VERSION = '0.08';
+  $Task::BeLike::DOY::VERSION = '0.09';
 }
 #ABSTRACT: modules I use
 
@@ -11,6 +11,7 @@ BEGIN {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -19,13 +20,11 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 TASK CONTENTS
 
 =head2 Useful apps
-
-=head3 L<App::Ack>
 
 =head3 L<App::Nopaste> 0.20
 
@@ -43,9 +42,11 @@ Version 0.20 required because: has Codepeek pastebin
 
 Version 0.09 required because: for ttyplay and ttytime
 
+=head3 L<Unicode::Tussle>
+
 =head2 Development tools
 
-=head3 L<App::ForkProve> 0.2.0
+=head3 L<App::ForkProve>
 
 =head3 L<Carp::Always::Color> 0.03
 
@@ -59,8 +60,6 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head3 L<Devel::NYTProf> 3.00
 
-=head3 L<Devel::REPL>
-
 =head3 L<Devel::STDERR::Indent>
 
 =head3 L<Devel::Trace>
@@ -71,6 +70,8 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head3 L<ExtUtils::MakeMaker::Dist::Zilla::Develop>
 
+=head3 L<Reply>
+
 =head3 L<Test::Pretty>
 
 =head2 Useful optional deps for things
@@ -78,10 +79,6 @@ Version 0.09 required because: for ttyplay and ttytime
 =head3 L<autodie>
 
 =head3 L<Archive::Zip>
-
-=head3 L<B::Keywords>
-
-=head3 L<Class::Refresh>
 
 =head3 L<Devel::PartialDump>
 
@@ -168,10 +165,9 @@ Jesse Luehrs <doy at tozt dot net>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Jesse Luehrs.
+This software is copyright (c) 2013 by Jesse Luehrs.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

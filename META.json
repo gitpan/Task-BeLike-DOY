@@ -4,7 +4,7 @@
       "Jesse Luehrs <doy at tozt dot net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -19,10 +19,16 @@
             "ExtUtils::MakeMaker" : "6.30"
          }
       },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08"
+         }
+      },
       "runtime" : {
          "requires" : {
-            "App::Ack" : "0",
-            "App::ForkProve" : "v0.2.0",
+            "App::ForkProve" : "0",
             "App::Nopaste" : "0.20",
             "App::Termcast" : "0.06",
             "App::Ttyrec" : "0",
@@ -31,18 +37,15 @@
             "App::ph" : "0",
             "App::pmuninstall" : "0",
             "Archive::Zip" : "0",
-            "B::Keywords" : "0",
             "Bread::Board::Declare" : "0",
             "CPAN::Mini" : "0",
             "Carp::Always::Color" : "0.03",
             "Carp::REPL" : "0",
-            "Class::Refresh" : "0",
             "DateTime" : "0",
             "Devel::Cover" : "0",
             "Devel::FindRef" : "0",
             "Devel::NYTProf" : "3.00",
             "Devel::PartialDump" : "0",
-            "Devel::REPL" : "0",
             "Devel::STDERR::Indent" : "0",
             "Devel::Trace" : "0",
             "Dist::Zilla" : "4.00",
@@ -61,6 +64,7 @@
             "Pod::Coverage::TrustPod" : "0",
             "Pod::Cpandoc" : "0",
             "Proc::InvokeEditor" : "0",
+            "Reply" : "0",
             "Term::ProgressBar" : "0",
             "Term::ReadLine::Gnu" : "0",
             "Term::TtyRec::Plus" : "0.09",
@@ -70,6 +74,7 @@
             "Test::Pod::Coverage" : "0",
             "Test::Pretty" : "0",
             "Test::Requires" : "0",
+            "Unicode::Tussle" : "0",
             "WWW::Mechanize" : "0",
             "YAML" : "0",
             "autodie" : "0",
@@ -96,8 +101,11 @@
          "web" : "https://github.com/doy/task-belike-doy"
       }
    },
-   "version" : "0.08",
+   "version" : "0.09",
    "x_Dist_Zilla" : {
+      "perl" : {
+         "version" : "5.018000"
+      },
       "plugins" : [
          {
             "class" : "Dist::Zilla::Plugin::Prereqs",
@@ -108,97 +116,97 @@
                }
             },
             "name" : "@DOY/TestMoreDoneTesting",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::GatherDir",
             "name" : "@DOY/GatherDir",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::PruneCruft",
             "name" : "@DOY/PruneCruft",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::ManifestSkip",
             "name" : "@DOY/ManifestSkip",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaYAML",
             "name" : "@DOY/MetaYAML",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::License",
             "name" : "@DOY/License",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::Readme",
             "name" : "@DOY/Readme",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::RunExtraTests",
             "name" : "@DOY/RunExtraTests",
-            "version" : "0.007"
+            "version" : "0.011"
          },
          {
             "class" : "Dist::Zilla::Plugin::ExecDir",
             "name" : "@DOY/ExecDir",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::ShareDir",
             "name" : "@DOY/ShareDir",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::MakeMaker",
             "name" : "@DOY/MakeMaker",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::Manifest",
             "name" : "@DOY/Manifest",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::TestRelease",
             "name" : "@DOY/TestRelease",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::ConfirmRelease",
             "name" : "@DOY/ConfirmRelease",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaConfig",
             "name" : "@DOY/MetaConfig",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaJSON",
             "name" : "@DOY/MetaJSON",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::NextRelease",
             "name" : "@DOY/NextRelease",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::CheckChangesHasContent",
             "name" : "@DOY/CheckChangesHasContent",
-            "version" : "0.005"
+            "version" : "0.006"
          },
          {
             "class" : "Dist::Zilla::Plugin::PkgVersion",
             "name" : "@DOY/PkgVersion",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::Authority",
@@ -208,12 +216,12 @@
          {
             "class" : "Dist::Zilla::Plugin::PodCoverageTests",
             "name" : "@DOY/PodCoverageTests",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::PodSyntaxTests",
             "name" : "@DOY/PodSyntaxTests",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::NoTabsTests",
@@ -228,7 +236,7 @@
          {
             "class" : "Dist::Zilla::Plugin::Test::Compile",
             "name" : "@DOY/Test::Compile",
-            "version" : "1.112820"
+            "version" : "2.002"
          },
          {
             "class" : "Dist::Zilla::Plugin::Metadata",
@@ -238,27 +246,27 @@
          {
             "class" : "Dist::Zilla::Plugin::MetaResources",
             "name" : "@DOY/MetaResources",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Check",
             "name" : "@DOY/Git::Check",
-            "version" : "1.121010"
+            "version" : "2.013"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Commit",
             "name" : "@DOY/Git::Commit",
-            "version" : "1.121010"
+            "version" : "2.013"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Tag",
             "name" : "@DOY/Git::Tag",
-            "version" : "1.121010"
+            "version" : "2.013"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::NextVersion",
             "name" : "@DOY/Git::NextVersion",
-            "version" : "1.121010"
+            "version" : "2.013"
          },
          {
             "class" : "Dist::Zilla::Plugin::TaskWeaver",
@@ -268,37 +276,37 @@
          {
             "class" : "Dist::Zilla::Plugin::UploadToCPAN",
             "name" : "@DOY/UploadToCPAN",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":InstallModules",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":IncModules",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":TestFiles",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":ExecFiles",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":ShareFiles",
-            "version" : "4.300020"
+            "version" : "4.300034"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":MainModule",
-            "version" : "4.300020"
+            "version" : "4.300034"
          }
       ],
       "zilla" : {
@@ -306,7 +314,7 @@
          "config" : {
             "is_trial" : "0"
          },
-         "version" : "4.300020"
+         "version" : "4.300034"
       }
    },
    "x_authority" : "cpan:DOY"
