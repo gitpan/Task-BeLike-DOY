@@ -32,7 +32,8 @@ my %WriteMakefileArgs = (
     "Bread::Board::Declare" => 0,
     "CPAN::Mini" => 0,
     "Carp::Always::Color" => "0.03",
-    "Carp::REPL" => 0,
+    "Carp::Reply" => 0,
+    "Clipboard" => 0,
     "DateTime" => 0,
     "Devel::Cover" => 0,
     "Devel::FindRef" => 0,
@@ -76,7 +77,7 @@ my %WriteMakefileArgs = (
   "TEST_REQUIRES" => {
     "Test::More" => "0.88"
   },
-  "VERSION" => "0.09",
+  "VERSION" => "0.10",
   "test" => {
     "TESTS" => "t/*.t"
   }

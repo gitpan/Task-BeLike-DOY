@@ -3,7 +3,7 @@ BEGIN {
   $Task::BeLike::DOY::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Task::BeLike::DOY::VERSION = '0.09';
+  $Task::BeLike::DOY::VERSION = '0.10';
 }
 #ABSTRACT: modules I use
 
@@ -20,7 +20,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 TASK CONTENTS
 
@@ -50,7 +50,7 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head3 L<Carp::Always::Color> 0.03
 
-=head3 L<Carp::REPL>
+=head3 L<Carp::Reply>
 
 =head3 L<circular::require>
 
@@ -143,6 +143,8 @@ Version 0.25 required because: for ->traverse
 =head3 L<Test::Requires>
 
 =head2 Dependencies for my non-CPAN apps
+
+=head3 L<Clipboard>
 
 =head3 L<File::pushd>
 

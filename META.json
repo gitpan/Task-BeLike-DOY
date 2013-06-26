@@ -40,7 +40,8 @@
             "Bread::Board::Declare" : "0",
             "CPAN::Mini" : "0",
             "Carp::Always::Color" : "0.03",
-            "Carp::REPL" : "0",
+            "Carp::Reply" : "0",
+            "Clipboard" : "0",
             "DateTime" : "0",
             "Devel::Cover" : "0",
             "Devel::FindRef" : "0",
@@ -101,7 +102,7 @@
          "web" : "https://github.com/doy/task-belike-doy"
       }
    },
-   "version" : "0.09",
+   "version" : "0.10",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018000"
