@@ -3,7 +3,7 @@ BEGIN {
   $Task::BeLike::DOY::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Task::BeLike::DOY::VERSION = '0.10';
+  $Task::BeLike::DOY::VERSION = '0.11';
 }
 #ABSTRACT: modules I use
 
@@ -20,7 +20,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 TASK CONTENTS
 
@@ -54,6 +54,8 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head3 L<circular::require>
 
+=head3 L<Data::Dump>
+
 =head3 L<Devel::Cover>
 
 =head3 L<Devel::FindRef>
@@ -70,15 +72,21 @@ Version 0.09 required because: for ttyplay and ttytime
 
 =head3 L<ExtUtils::MakeMaker::Dist::Zilla::Develop>
 
+=head3 L<lib::require::all>
+
 =head3 L<Reply>
 
 =head3 L<Test::Pretty>
+
+=head3 L<Test::Without::Module>
 
 =head2 Useful optional deps for things
 
 =head3 L<autodie>
 
 =head3 L<Archive::Zip>
+
+=head3 L<B::Keywords>
 
 =head3 L<Devel::PartialDump>
 
@@ -114,7 +122,11 @@ Version 0.05 required because: for offline mode
 
 =head3 L<App::pmuninstall>
 
+=head3 L<App::PAUSE::Comaint>
+
 =head3 L<CPAN::Mini>
+
+=head3 L<Module::Which>
 
 =head3 L<Pod::Cpandoc>
 
@@ -133,6 +145,8 @@ Version 0.05 required because: for offline mode
 Version 0.25 required because: for ->traverse
 
 =head3 L<Plack>
+
+=head3 L<Scope::Guard>
 
 =head3 L<Term::ProgressBar>
 
