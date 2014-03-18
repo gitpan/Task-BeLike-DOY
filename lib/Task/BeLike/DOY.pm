@@ -3,7 +3,7 @@ BEGIN {
   $Task::BeLike::DOY::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Task::BeLike::DOY::VERSION = '0.11';
+  $Task::BeLike::DOY::VERSION = '0.12';
 }
 #ABSTRACT: modules I use
 
@@ -20,7 +20,7 @@ Task::BeLike::DOY - modules I use
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 TASK CONTENTS
 
@@ -160,13 +160,29 @@ Version 0.25 required because: for ->traverse
 
 =head3 L<Clipboard>
 
+=head3 L<Config::INI::Reader>
+
+=head3 L<CPAN::Changes>
+
+=head3 L<CPAN::DistnameInfo>
+
+=head3 L<Data::ICal>
+
+=head3 L<Data::ICal::DateTime>
+
 =head3 L<File::pushd>
 
 =head3 L<IO::Pty::Easy> 0.08
 
 =head3 L<JSON>
 
+=head3 L<Parse::CPAN::Packages::Fast>
+
+=head3 L<Term::ReadKey>
+
 =head3 L<WWW::Mechanize>
+
+=head3 L<WWW::Wunderground::API>
 
 =begin taskweaver_parsing_is_broken
 
@@ -177,13 +193,14 @@ Version 0.25 required because: for ->traverse
 
 =head1 AUTHOR
 
-Jesse Luehrs <doy at tozt dot net>
+Jesse Luehrs <doy@tozt.net>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Jesse Luehrs.
+This software is Copyright (c) 2014 by Jesse Luehrs.
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+This is free software, licensed under:
+
+  The MIT (X11) License
 
 =cut
